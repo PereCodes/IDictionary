@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IDictionary App">
+    <title>IDictionary | Words at your fingertips...</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark-theme body">
+    <div class="container">
+        <div class="detail-box flex flex-rev">
+            <div class="form-box">
+                <form class="search">
+                    <input type="text" placeholder="Search Word" class="search-input" />
+                    <button class="btn-search">
+                        Search
+                        <i class="fa-solid fa-magnifying-glass search"></i>
+                    </button>
+                </form>
+
+                <div class="search-match">
+                    <div class="word-of-day center marginbottom">
+                        <h2 class="margin underline">Top lookup words</h2>
+                        <ul>
+                            <li class="list-item flex space-btw align-items">
+                                <h1 class="word">Ecstatic</h1>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </li>
+                            <li class="list-item flex space-btw align-items">
+                                <h1 class="word">Gaslighting</h1>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </li>
+                            <li class="list-item flex space-btw align-items">
+                                <h1 class="word">Fritz</h1>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="recent-notice ">
+                        <h2 class="center">Recent words</h2>
+                    </div>
+
+
+                </div>
+
+                <div class="search-match Fav-words">
+                    <div class="center marginbottom">
+                        <div class="fav flex space-btw align-item">
+                            <h2 class="underline">Favourites</h2>
+                            <div class="canel">Back</div>
+                        </div>
+
+                        <div class="fav-list">
+                            <!-- <li class="list-item flex space-btw align-items">
+                                <h1>Fritz</h1>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </li> -->
+                        </div>
+
+                        <div class="fav-notice">
+                            <div class="msg">NO FAVOURITE WORD(S) ADDED</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-match info-page">
+                    <div class="info flex space-btw align-item">
+                        <h2 class="underline">Info</h2>
+                        <div class="canel">Back</div>
+                    </div>
+
+                    <div class="info-text">
+                        <p> Idictionary, a reference book that lists words in order, for Western languages,
+                            alphabetically and gives their
+                            meanings. <br><br> In addition to its basic function of defining words, this dictionary
+                            provides
+                            information about their
+                            pronunciation, grammatical forms and functions, etymologies, syntactic peculiarities,
+                            variant
+                            spellings, synonyms, antonyms as well as a link for further Informations.
+
+                            <br><br>
+                            Made with &hearts; by TopWright
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="bt-pane flex align-items">
+                    <div class="icon-info grid">
+                        <i class="fa-solid fa-circle-info info"></i>
+                        <span>info</span>
+                    </div>
+
+                    <div class="icon-starred grid">
+                        <i class="fa-solid fa-star info">
+                            <!-- <span class="count">0</span> -->
+                        </i>
+                        <span>Favourites</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pad">
+                <div class="info-box">
+                    <div class="nav flex space-btw align-item">
+                        <i class="fa-solid fa-angle-left back-btn"></i>
+                        <p>Definition</p>
+                        <i class="fa-regular fa-star star""></i>
+                    </div>
+                    <!-- <h1>words will appear here</h1> -->
+
+                    <div class=" preloader">
+                            <img src="  /img/book.gif" alt="">
+                    </div>
+
+                    <div class="word-details">
+                        <div class="word">
+                            <h1 class="title"></h1>
+                        </div>
+
+                        <div class="text-tone flex align-items">
+                            <p class="tone"></p>
+                            <div class="sound">
+                                <audio class="audio" src=""></audio>
+                                <!-- <i class="fa-solid fa-volume-high"></i> -->
+                            </div>
+                        </div>
+
+                        <p class="part-of-speech"></p>
+
+                        <div class="temp-1">
+                            <div class="definition">
+                                <ol class="def-items">
+                                </ol>
+                            </div>
+
+                            <div class="examples">
+                                <h2></h2>
+                                <ul class="exam-items">
+                                </ul>
+                            </div>
+
+                            <div class="synonyms">
+                                <h2></h2>
+                                <ul class="syn-items">
+                                </ul>
+                            </div>
+
+                            <div class="antonyms">
+                                <h2></h2>
+                                <ul class="ant-items">
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="marginbottom"></div>
+
+                        <p class="part-of-speech2"></p>
+
+                        <div class="temp-2">
+                            <div class="definition2">
+                                <ol class="def-items2">
+                                </ol>
+                            </div>
+
+                            <div class="examples2">
+                                <h2></h2>
+                                <ul class="exam-items2">
+                                </ul>
+                            </div>
+
+                            <div class="synonyms2">
+                                <h2></h2>
+                                <ul class="syn-items2">
+                                </ul>
+                            </div>
+
+                            <div class="antonyms2">
+                                <h2></h2>
+                                <ul class="ant-items2">
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="marginbottom"></div>
+
+                        <p class="part-of-speech3"></p>
+
+                        <div class="temp-3">
+                            <div class="definition3">
+                                <ol class="def-items3">
+                                </ol>
+                            </div>
+
+                            <div class="examples3">
+                                <h2></h2>
+                                <ul class="exam-items3">
+                                </ul>
+                            </div>
+
+                            <div class="synonyms3">
+                                <h2></h2>
+                                <ul class="syn-items3">
+                                </ul>
+                            </div>
+
+                            <div class="antonyms3">
+                                <h2></h2>
+                                <ul class="ant-items3">
+                                </ul>
+                            </div>
+
+                            <div class="more-info3">
+                            </div>
+                        </div>
+
+                        <div class="more-info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
